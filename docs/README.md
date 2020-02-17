@@ -23,7 +23,7 @@
 
  - Commit your changes to the REPO and push it under */APP*
 
-  ### **PIC**
+  ### **Sample of output as the following**
  ![Example for the output:](image.png)
 
   
@@ -68,6 +68,7 @@ create a script (bash/python or whatever you like) to perform the followings :
 *   Save the script as *builder.**EXTENSION*** and push it to the **REPO** under */scripts*
 
 
+**extra points :**
  - **EXTRA 1**,  The script should handle exit status codes as follows:
  
     | **code**   |      **Debug message**      |  
@@ -115,7 +116,7 @@ Your Docker-Compose should have the ability to pass the configuration as options
 		    (make handler to restart your application if needed)
 		2.  Create log file for each change of releases with date stamp and save it under */var/log/my_app*
 
-
+**extra points :**
  - **EXTRA 1** , make the log file only on the first node
  - **EXTRA 2** , make the machines using Vagrant script
  - **EXTRA 3** , a scheduled job to check the machines storage size and write it in another log file,
@@ -148,5 +149,6 @@ Convert the docker-compose to a helm Chart, With the following specs:
     1.  Values file with configurable sizes for Redis and the DB (you can use stable helm charts)
 9.  Persistent data storage for DB
 10.  Post-delete hook to clean up the volumes of your application (if exists )
-    
+
+**extra points :**
  - **EXTRA 1** , add the SSL certificates on your ingress controller
