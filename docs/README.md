@@ -4,7 +4,7 @@
   
 
  - Fork the task repo to your GitHub account, using whatever language you
-   like to create an application that print hello world, and create a 
+   like to create a web-application that print hello world, and create a 
    DockerHub account to push images on it later on.
 
  - The application should have a non relational db, Redis and your core
