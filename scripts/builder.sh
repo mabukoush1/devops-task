@@ -10,7 +10,7 @@ then
     docker build -t koushema/helloworld:v1.0 -f scripts/Dockerfile  https://github.com/mabukoush1/devops-task.git
     # test if the newly built image is working
     docker container prune -f && sudo docker image prune -f
-    response_docker="`docker run -d --name helloworld --network host helloworld:latest tail -f /dev/null`"
+    response_docker="`sudo docker run -e DJANGO_BACKEND_SECRET_KEY=$DJANGO_BACKEND_SECRET_KEY -e DB=$DB -e DB_HOST=$DB_HOST -e DB_PORT=$DB_PORT -e DB_PASS=$DB_PASS --name helloworld --network host -d koushema/helloworld:v1.0`"
 
     echo "Character length is ${#response_docker}"
 

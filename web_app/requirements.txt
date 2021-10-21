@@ -1,0 +1,6 @@
+django
+python-dotenv
+django-ipware
+redis
+django_redis
+requests

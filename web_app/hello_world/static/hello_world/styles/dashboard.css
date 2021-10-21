@@ -1,0 +1,72 @@
+.container-dashboard {
+    display: grid;
+    grid-template-columns: 1305px;
+    grid-template-rows: 60px 900px;
+}
+
+.container-dashboard-content1 {
+    display: grid;
+    grid-template-columns: 652px 652px;
+    grid-template-rows: 60px;
+}
+
+.dashboard-logo {
+    text-align: left;
+    padding: 10px; padding-top: 20px;
+    background-color: rgb(21, 73, 56);
+    color: whitesmoke;
+    border-right: solid 1px rgb(17, 16, 16)
+
+}
+
+.dashboard-logout {
+    text-align: right;
+    padding: 10px; padding-top: 20px;
+    background-color: rgb(21, 73, 56);
+}
+
+.dashboard-logout-button {
+    text-decoration-line: none;
+    color: whitesmoke;
+}
+
+
+
+
+.container-dashboard-content {}
+
+
+.container-dashboard-content2 {
+    display: grid;
+    grid-template-columns:  652px 652px;
+    grid-template-rows: 900px;
+}
+.dashboard-navigation {
+    padding: 10px; padding-top: 20px;
+    
+}
+
+.dashboard-chatZone {
+    display: grid;
+    grid-template-columns:  652px;
+    grid-template-rows: 400px 400px 100px;
+}
+
+
+.dashboard-navigation {border: solid 1px grey}
+
+
+.dashboard-chatZone1 {
+    border: solid 1px grey;
+    text-align: center;
+}
+.dashboard-chatZone1-intro1 {
+    color: rgb(56, 134, 108);
+    font-size: 30px;
+}
+
+
+
+.dashboard-chatZone2 {border: solid 1px grey}
+
+.dashboard-chatZone3 {border: solid 1px grey}

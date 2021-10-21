@@ -1,0 +1,110 @@
+
+.body-login {overflow: hidden;}
+
+/* Grid1 */
+.container-login {
+    display: grid;
+    grid-template-columns: 1305px;
+    grid-template-rows: 60px 300px;
+  }
+
+
+  .container-login-content {
+    text-align: center;
+  }
+
+  .container-login-content1 {
+    color: whitesmoke; padding-left: 20px;
+    background-color: rgb(100, 160, 140);
+    text-align: left; padding-top: 20px;
+    border-bottom: solid 6px rgb(146, 96, 146);
+  }
+
+  .container-login-content2 {
+    padding-top: 20px;
+  }
+
+
+
+
+  .login-intro1 {
+    font-size: 50px;
+  }
+
+  .login-intro2 {
+    color: rgb(80, 80, 110);
+    font-size: 18px; margin-top: -63%;
+  }
+
+  .login-intro3 {
+    color: rgb(80, 80, 110);
+    /* font-size: 18px; margin-top: -63%; */
+    margin-left: -20%;
+  }
+  #login_email { 
+    width: 300px; height: 39px; font-size: 19px;
+    margin-left: -0.5%;
+    border-radius: 5px;
+    border: solid 0.5px rgb(192, 190, 190);
+  }
+
+
+  .login-intro4 {
+    color: rgb(80, 80, 110);
+    /* font-size: 18px; margin-top: -63%; */
+    margin-left: -18%;
+  }
+  #login_password { 
+    width: 300px; height: 39px; font-size: 19px;
+    margin-left: -0.5%;
+    border-radius: 5px;
+    border: solid 0.5px rgb(192, 190, 190);
+  }
+
+
+
+  .login-intro5 {
+    margin-left: -14%;
+  }
+  #forgot_password { 
+    /* width: 300px; height: 39px; font-size: 19px; */
+    border-radius: 5px;
+    text-decoration-line: none; color: rgb(53, 122, 53)
+  }
+
+
+
+  .login-intro6 {
+    color: whitesmoke;
+    /* font-size: 18px; margin-top: -63%; */
+    background-color: rgb(9, 109, 109);
+    margin-left: -18%;
+  }
+  #sign_in { 
+    width: 300px; height: 39px; font-size: 19px;
+    margin-left: -0.5%;
+    border-radius: 5px;
+    border: solid 0.5px rgb(192, 190, 190);
+  }
+
+
+  .login-intro6 {
+  }
+  #sign_in {
+    color: whitesmoke; 
+    background-color: rgb(9, 109, 109);
+    width: 300px; height: 39px; font-size: 19px;
+    margin-left: -0.5%;
+    border-radius: 5px;
+    border: solid 0.5px rgb(192, 190, 190);
+  }
+
+
+  .login-intro7 {
+    /* margin-left: -18%; */
+  }
+  #dont_haveAccount { 
+    width: 300px; height: 39px; font-size: 19px;
+    text-decoration-line: none;
+    color: rgb(9, 109, 109);
+  }
