@@ -42,23 +42,3 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
-
-
-
-
-
-
-
-
-
-
-
-
-# # Login view
-# def login(request):
-#     return render(request, 'hello_world/login.html')
-
-
-
-
-# dig +short myip.opendns.com @resolver1.opendns.com
