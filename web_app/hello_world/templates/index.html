@@ -1,4 +1,12 @@
-    <div class="container d-flex align-items-center justify-content-center"><h3>Hello World</h3></div>
+{% extends 'base.html' %}
+{% block title %} Hello World Index Page {% endblock title %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="container d-flex align-items-center justify-content-center"><h3>Hello World</h3></div>
     <div class="container d-flex align-items-center justify-content-center"><h5>Your Data Are</h5></div>
     <table class="table table-responsive-lg table-responsive-md table-responsive-sm table-centered mb-0">
         <thead class="">
@@ -22,5 +30,6 @@
     </table>
 
 
+{% endblock content %}
 
 

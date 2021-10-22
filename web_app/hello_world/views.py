@@ -4,7 +4,6 @@ import os
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
-from ipware.ip import get_client_ip
 import redis
 from requests import get
 from dotenv import load_dotenv
@@ -21,7 +20,6 @@ r = redis.StrictRedis(host=db_host, port=db_port, password=db_pass, db=db_name)
 
 
 def index(request):
-
     print(db_pass)
     ip = get('https://api.ipify.org').text
     print(f'My public IP address is: {ip}')
