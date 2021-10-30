@@ -1,4 +1,3 @@
-# from django.shortcuts import render
 
 import os
 from django.shortcuts import render
@@ -8,6 +7,8 @@ import redis
 from requests import get
 from dotenv import load_dotenv
 
+
+# Initialise all environment variables
 load_dotenv()
 
 db_name = '%s' % os.environ['DB']
@@ -20,9 +21,9 @@ r = redis.StrictRedis(host=db_host, port=db_port, password=db_pass, db=db_name)
 
 
 def index(request):
-    print(db_pass)
+
     ip = get('https://api.ipify.org').text
-    print(f'My public IP address is: {ip}')
+    agent= request.headers.get('User-Agent')
 
     check_key = r.exists(f'{ip}')
     if check_key == 1:
@@ -36,9 +37,10 @@ def index(request):
 
 
     context = {
-        'greeting': 'Hello World!!',
         'my_ip': ip,
         'no_of_visit': visit_count.decode(),
+        'agent':agent,
     }
+
     return render(request, 'index.html', context)
 
