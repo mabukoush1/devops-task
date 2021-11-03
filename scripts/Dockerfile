@@ -17,8 +17,8 @@ RUN pip install --upgrade pip
 COPY --from=0 /code/requirements.txt .
 RUN pip install -r requirements.txt
 COPY --from=0 /code/ .
-EXPOSE 8080
-CMD python manage.py runserver 8080
+#EXPOSE 8000
+CMD python manage.py runserver
 
 
 
