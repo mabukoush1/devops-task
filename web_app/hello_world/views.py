@@ -10,7 +10,6 @@ from dotenv import load_dotenv
 
 # Initialise all environment variables
 load_dotenv()
-
 db_name = '%s' % os.environ['DB']
 db_host = '%s' % os.environ['DB_HOST']
 db_port = '%s' % os.environ['DB_PORT']
